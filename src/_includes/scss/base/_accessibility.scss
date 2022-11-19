@@ -1,0 +1,22 @@
+.skip-link {
+    position: fixed;
+    inset-inline-start: 1em;
+    inset-block-start: 1em;
+    background-color: hsl(var(--hsl-primary-darker));
+    padding: 0.5em 1em;
+    border: 2px solid hsl(var(--hsl-white));
+    border-radius: 0.5em;
+    transition: color var(--time), background-color var(--time), transform var(--time);
+    transform: translateY(calc(-100% - 2em));
+    z-index: 10000;
+
+    &:focus {
+        transform: translateY(0);
+    }
+    
+    &:hover {
+        color: hsl(var(--hsl-primary-darker));
+        background-color: hsl(var(--hsl-white));
+    }
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pageTitle }} | {{site.title}}</title>
+    {% if pageID.includes("tutoring")%}{% set description = site.description.tutoring %}{% endif %}
+    {% if pageID.includes("portfolio")%}{% set description = site.description.portfolio %}{% endif %}
+    {% if pageID.includes("blog")%}{% set description = site.description.blog %}{% endif %}
+    <meta name="description" content="{{description or site.description.main}}">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/scripts.js" defer></script>
+</head>
+<body class="{{pageID}}">
+    <div class="site-container"><!-- need this for the slide-out sidebar -->
+        <a href="#main" class="skip-link">Skip to main content</a>
+        {% include "partials/header.njk" %}
+        <main class="main" id="main">
+            <div class="hero"><h1 class="hero-heading">{{mainTitle or pageTitle}}</h1></div>
+
+        {% block main %}
+        {{ content | safe }}
+        {% endblock %}
+        </main>
+        {% include "partials/footer.njk" %}
+    </div>
+    {% include "partials/sidebar.njk" %}
+</body>
+</html>

@@ -1,0 +1,40 @@
+---
+layout: "layouts/base.njk"
+pageTitle: "What I Teach"
+pageID: "tutoring-subjects"
+mainTitle: "What I Teach"
+---
+
+<section class="subjects subjects-intro">
+    <p class="disclaimer">The following are the subjects I teach, by topic, along with descriptions of those subjects. Note that I only offer instruction in math and physics courses, whether as a supplement to a traditional school class or as the primary deliverer of homeschool instruction. I <em>do not</em> offer any instruction in test preparation for standardized tests (AP exams, SAT/ACT, GRE, etc.).</p>
+</section>
+<section class="subjects math-subjects" aria-labelledby="math-subjects-heading">
+
+<h2 id="math-subjects-heading">Mathematics Subjects</h2>
+
+<dl id="math-subjects-list">
+{% for item in tutoringSubjects %}
+{% if item.subject === "math" %}
+
+<dt class="subject math-subject"><dfn>{{item.topic}}</dfn></dt>
+<dd class="subject-description math-description">{{item.description}}</dd>
+{% endif %}
+{% endfor %}
+</dl>
+
+</section>
+
+<section class="subjects physics-subjects" aria-labelledby="physics-subjects-heading">
+
+<h2 id="physics-subjects-heading">Physics Subjects</h2>
+
+<dl id="physics-subjects-list">
+{% for item in tutoringSubjects %}
+{% if item.subject === "physics" %}
+<dt class="subject physics-subject"><dfn>{{item.topic}}</dfn></dt>
+<dd class="subject-description physics-description">{{item.description}}</dd>
+{% endif %}
+{% endfor %}
+</dl>
+
+</section>

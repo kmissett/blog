@@ -1,0 +1,8 @@
+<nav class="{{location}}-blog-tags" aria-label="Site {{location}} blog tags">
+  <ul class="{{location}}-blog-tags-list" role="list" id="{{location}}-blog-tags-list">
+    <li class="{{location}}-blog-tags-list-item"><a class="blog-tag-link" href="/blog">All Posts</a></li>
+{%for tag in collections.tagsList %}
+  {% if tag !== "posts" %}<li class="{{location}}-blog-tags-list-item"><a class="blog-tag-link" href="/category/{{tag}}">{{tag}}</a></li>{% endif %}
+{%endfor%}
+  </ul>
+</nav>

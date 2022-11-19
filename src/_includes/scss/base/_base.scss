@@ -1,0 +1,90 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body { min-height: 100vh; }
+html { font-size: 100%; }
+body {
+    position: relative;
+    overflow-inline: hidden;
+    scroll-behavior: smooth;
+
+    font-family: var(--font-text);
+    font-size: var(--fs);
+    line-height: var(--line-height);
+
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+
+/***** Headings *****/
+h1,h2,h3 {
+    font-family: var(--font-headings);
+    line-height: 1;
+    font-weight: var(--fw-light);
+}
+
+h1 {font-size: var(--fs-xxl);}
+h2 {font-size: var(--fs-xl);}
+h3 {font-size: var(--fs-lg);}
+
+
+/***** Typography *****/
+p + p {margin-block-start: 1em;}
+
+ol, ul {list-style: inside;}
+
+b, strong {font-weight: var(--fw-bold);}
+cite, i, em {font-style: italic;}
+cite em {font-weight: var(--fw-bold);}
+
+a {color: currentColor;}
+
+.button {
+    font: inherit;
+    cursor: pointer;
+    color: currentColor;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+
+    &:focus {outline: 2px solid currentColor;}
+}
+
+.icon {
+    inline-size: 1.5em;
+    padding: 0.125em;
+    vertical-align: middle;
+    svg { aspect-ratio: 1; }
+}
+
+svg {
+    display: block;
+    fill: currentColor;
+    inline-size: 100%;
+}
+
+img, video {
+    display: block;
+    max-inline-size: 100%;
+}
+
+/***** Definition Lists *****/
+dfn {
+    font-family: var(--font-headings);
+    font-style: normal;
+    font-weight: var(--fw-light);
+}
+
+dt {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs);
+}
+
+dd {
+    margin-block-end: 1em;
+    margin-inline-start: 1em;
+}

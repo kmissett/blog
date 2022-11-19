@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Home",
+        "url": "/",
+        "icon": "home",
+        "primary": true
+    },
+    {
+        "name": "About",
+        "url": "/about",
+        "icon": "about",
+        "primary": true
+    },
+    {
+        "name": "Blog",
+        "url": "/blog",
+        "icon": "blog",
+        "primary": true
+    },
+    {
+        "name": "Tutoring",
+        "url": "/tutoring",
+        "icon": "tutoring",
+        "primary": true
+    },
+    {
+        "name": "Contact",
+        "url": "/contact",
+        "icon": "contact",
+        "primary": true
+    },
+    {
+        "name": "Privacy",
+        "url": "/privacy",
+        "icon": "privacy",
+        "primary": false
+    }
+]

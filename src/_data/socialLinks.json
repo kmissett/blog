@@ -1,0 +1,44 @@
+[
+    {
+        "name": "GitHub",
+        "url": "#",
+        "icon": "github",
+        "nav": "social"
+    },
+    {
+        "name": "Codepen",
+        "url": "#",
+        "icon": "codepen",
+        "nav": "social"
+    },
+    {
+        "name": "Twitter",
+        "url": "#",
+        "icon": "twitter",
+        "nav": "social"
+    },
+    {
+        "name": "YouTube",
+        "url": "#",
+        "icon": "youtube",
+        "nav": "social"
+    },
+    {
+        "name": "Facebook",
+        "url": "#",
+        "icon": "facebook-box",
+        "nav": "social"
+    },
+    {
+        "name": "Replit",
+        "url": "#",
+        "icon": "replit",
+        "nav": "social"
+    },    
+    {
+        "name": "LinkedIn",
+        "url": "#",
+        "icon": "linkedin",
+        "nav": "social"
+    }
+]

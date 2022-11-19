@@ -1,0 +1,67 @@
+.main {
+
+    & > * {padding-inline: var(--gutter);}
+
+    blockquote {
+		padding-block: .25em; 
+        padding-inline-start: calc(var(--gutter) + 1em);
+		margin-block: 1em;
+        position: relative;
+
+        &::before {
+            content: "";
+            inline-size: 0.25em;
+            block-size: 100%;
+            inset-inline-start: var(--gutter);
+            inset-block-start: 0;
+            position: absolute;
+            background-color: hsl(var(--hsl-primary));
+        }
+
+		p {
+			margin-block-end: 0;
+		}
+	}
+
+	ol, ul {
+        margin-block-end: 1em;
+        margin-inline-start: 1em;
+		li {padding-block-end: 0.5em;}
+	}
+
+	a {
+		--link-line-width: 0.1em;
+        text-decoration: none;
+		line-height: calc(1.1*var(--line-height));
+		background-image: linear-gradient(hsl(var(--hsl-primary)), hsl(var(--hsl-primary)));
+		background-repeat: no-repeat;
+		background-size: 100% var(--link-line-width);
+		background-position: bottom;
+		transition: background-size 0.15s ease-out;
+	
+		&:hover, &:focus {
+			background-size: 100% calc(100% - 0.25 * var(--link-line-width));
+		}
+
+		// If a user sets a high contrast mode, background images disappear
+		@media (forced-colors: active) {text-decoration: underline;
+			&:hover, &:focus {outline: 2px solid currentColor; outline-offset: 0.1em;}}
+	}
+}
+
+/***** Home Page *****/
+.home-page-article {
+	padding-block: 1em;
+
+}
+
+/***** Post Pages *****/
+.post .post-title {text-align: center; }
+
+
+.page-navigation-controls {
+    display: flex;
+    gap: 1em;
+    justify-content: space-evenly;
+    margin-block-end: 1em;
+}

@@ -1,0 +1,17 @@
+{% set location="footer" %}
+<footer class="site-footer {{pageID}}-footer" id="site-footer">
+    <h2 class="copyright">&copy;<span></span> {{site.title}}</h2>
+    <div class="social-links">Social links here</div>
+    <section class="footer-section footer-primary" aria-label="Footer main">
+        {% include "partials/components/nav.njk" %}
+    </section>
+    <section class="footer-section footer-blog" aria-labelledby="footer-blog-nav">
+        <h3 class="footer-blog-nav" id="footer-blog-nav">Blog</h3>
+        {% include "partials/components/tagList.njk" %}
+    </section>
+    <section class="footer-section footer-tutoring" aria-labelledby="footer-tutoring-nav">
+        <h3 class="footer-tutoring-nav" id="footer-tutoring-nav">Tutoring</h3>
+        {% include "partials/components/tutoringNav.njk" %}
+    </section>
+    
+</footer>

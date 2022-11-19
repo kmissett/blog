@@ -1,0 +1,9 @@
+<header class="site-header" id="site-header">
+<div class="banner">
+    <div class="site-title"><a href="/">{{site.title}}</a></div>
+    <!-- <button class="button icon toggle-color-button" aria-label="Toggle color mode"><span aria-hidden="true">{% include "icons/sun.svg" %}</span></button> -->
+    <button class="button icon open-sidebar-button" aria-controls="sidebar-nav-list" aria-expanded="false" aria-label="Open site sidebar"><span aria-hidden="true">{% include "icons/menu.svg" %}</span></button>
+</div>
+    {% set location = "header" %}
+    {% include "partials/components/nav.njk" %}
+</header>

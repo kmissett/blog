@@ -1,0 +1,70 @@
+@font-face {
+	font-family: 'Newsreader';
+	src: url('fonts/newsreader.woff2') format('woff2');
+	font-style: normal;
+	font-weight: 200 800;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Newsreader';
+	src: url('fonts/newsreader-italic.woff2') format('woff2');
+	font-style: italic;
+	font-weight: 200 800;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 200 700;
+	font-display: swap;
+}
+
+:root {
+    --max-inline-size: 60rem;
+    --gutter: max(1rem, (100vw - var(--max-inline-size))/2);
+    --time:300ms;
+    
+    --line-height: 1.4;
+
+    --fs: clamp(1.25rem, 1rem + 3vw, 1.5rem);
+    --fs-lg: calc(1.25 * var(--fs));
+    --fs-xl: calc(1.5 * var(--fs));
+    --fs-xxl: calc(2 * var(--fs));
+    --fs-sm: calc(0.875 * var(--fs));
+    --fs-xs: calc(0.75 * var(--fs));
+    --fs-xxs: calc(0.5 * var(--fs));
+
+    --font-text: "Newsreader", serif;
+    --font-headings: "Oswald", sans-serif;
+
+    --fw: 400;
+    --fw-bold: 700;
+    --fw-light: 200;
+	
+	
+	/***** Colors *****/
+	--hue: 220;
+	--saturation: 30%;
+
+	--hsl-white: var(--hue), var(--saturation), 95%;
+	--hsl-primary-lightest: var(--hue), var(--saturation), 85%;
+	--hsl-primary-lighter: var(--hue), var(--saturation), 75%;
+	--hsl-primary-light: var(--hue), var(--saturation), 60%;
+	--hsl-primary: var(--hue), var(--saturation), 50%;
+	--hsl-primary-dark: var(--hue), var(--saturation), 25%;
+	--hsl-primary-darker: var(--hue), var(--saturation), 10%;
+	--hsl-black: var(--hue), var(--saturation), 5%;
+	
+	--hsl-red: 0, 80%, 50%;
+	--hsl-red-dark: 0, 80%, 40%;
+
+	--hsl-green: 120, 50%, 50%;
+	--hsl-green-dark: 120, 50%, 40%;
+	
+    --color-text: hsl(var(--hsl-white));
+    --color-bg: hsl(var(--hsl-primary-darker));
+
+}

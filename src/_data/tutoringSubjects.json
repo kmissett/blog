@@ -1,0 +1,21 @@
+[
+
+    {"subject": "math", "topic": "Arithmetic","description": "Counting; basic operations; fractions and decimals"},
+    {"subject": "math", "topic": "Algebra","description": "Expressions of one or more variables, including linear, quadratic, and other polynomial equations, functions, and systems of equations. Rational numbers, real numbers, and complex numbers."},
+    {"subject": "math", "topic": "Geometry","description": "Shapes, lines, and angles in 2 and 3 dimensions, along with discussion of formal proof strategies."},
+    {"subject": "math", "topic": "Statistics","description": "Collection and interpretation of data in one or more variables; probability and counting."},
+    {"subject": "math", "topic": "Trigonometry","description": "Right triangle geometry, with applications to vectors and periodic motion."},
+    {"subject": "math", "topic": "Precalculus","description": "The extension of algebra to non-polynomial or infinite-degree functions, especially exponential and logarithmic functions; limits and continuity"},
+    {"subject": "math", "topic": "Differential Calculus","description": "Finding instantaneous change in a function of one or more variable; maximum and minimum values; optimization."},
+    {"subject": "math", "topic": "Integral Calculus","description": "Recovering a function from its derivative; area under curves."},
+    {"subject": "math", "topic": "Multivariable Calculus","description": "Extending calculus to functions of multiple variables."},
+    {"subject": "math", "topic": "Differential Equations","description": "Equations whose solutions are functions whose derivatives satisfy certain relationships; initial value and boundary conditions."},
+    {"subject": "math", "topic": "Linear Algebra","description": "Linear transformations and vector spaces; eigenvalues and eigenvectors; diagonalization and spectral theory; singular value decomposition."},
+    {"subject": "math", "topic": "Number Theory","description": "The underlying theoretical structure of arithmetic; primes; Diophantine equations; quadratic reciprocity."},
+    {"subject": "physics", "topic": "Kinematics and Mechanics","description":"Motion of objects in 1-3 dimensions; energy; momentum; forces; conservation laws."},
+    {"subject": "physics", "topic": "Electricity and Magnetism","description":"Electric charges; voltage and current; electric circuits; electromagnetic waves; Maxwell's equations."},
+    {"subject": "physics", "topic": "Thermodynamics","description":"The application of conservation laws to heat; entropy."},
+    {"subject": "physics", "topic": "Optics","description":"The behavior of light and other electromagnetic waves as they travel through a medium."},
+    {"subject": "physics", "topic": "20th-Century Physics","description":"Special relativity; blackbody radiation; introductory quantum mechanics."}
+    
+]

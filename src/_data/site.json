@@ -1,0 +1,11 @@
+{
+    "title": "Kevin Missett",
+    "shortTitle": "KM",
+    "description": {
+        "main": "A landing page for my coding and design portfolio, my tutoring services, and eventually my blog.",
+        "tutoring": "Offering online tutoring in math and physics from the middle-school through college levels.",
+        "portfolio": "A gallery of my coding and design work",
+        "blog": "A blog about coding and web design, with a particular focus on accessibility, as well as math, physics, or whatever else I'm interested in at the moment."
+    },
+    "baseURL": "http://localhost:8080/"
+}

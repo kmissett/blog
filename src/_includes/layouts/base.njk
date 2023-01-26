@@ -10,6 +10,20 @@
     {% if pageID.includes("blog")%}{% set description = site.description.blog %}{% endif %}
     <meta name="description" content="{{description or site.description.main}}">
     <link rel="stylesheet" href="/style.css">
+    <script>
+        function getColorMode() {
+            if(localStorage.currentColorMode) return localStorage.currentColorMode
+            if(window.matchMedia("prefers-color-scheme: light").matches) return "light"
+            return "dark"
+        }
+
+        function setColorMode(mode) {
+            document.documentElement.setAttribute("data-color-mode", mode)
+            localStorage.setItem("currentColorMode", mode)
+        }
+
+        setColorMode(getColorMode())
+    </script>
     <script src="/scripts.js" defer></script>
 </head>
 <body class="{{pageID}}">

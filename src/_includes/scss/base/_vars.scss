@@ -23,6 +23,9 @@
 }
 
 :root {
+
+	color-scheme: light dark;
+
     --max-inline-size: 60rem;
     --gutter: max(1rem, (100vw - var(--max-inline-size))/2);
     --time:300ms;

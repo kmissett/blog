@@ -2,8 +2,9 @@
     position: fixed;
     inset-inline-end: 0;
     inset-block: 0;
-    height: 100vh;
-    inline-size: min(100%, 20rem);
+    block-size: 100vh;
+    block-size: 100dvh;
+    inline-size: min(100%, 22.5rem);
     background-color: hsl(var(--hsl-black));
     padding-inline: 1em;
     padding-block: 3.5em;
@@ -13,7 +14,7 @@
     z-index: 20;
     overflow-block: scroll;
 
-    .sidebar-open & {
+    &[aria-expanded="true"] {
         visibility: visible;
         transform: translate3d(0,0,0);
     }
@@ -47,7 +48,8 @@
     pointer-events: none;
     transition: opacity var(--time);
 
-    .sidebar-open &  {
+    // replace with body:has(.site-sidebar[aria-expanded="true"]) &
+    .sidebar-open & {
         opacity: .9;
         pointer-events: auto;
         cursor: pointer;

@@ -4,9 +4,9 @@ const postcss = require('postcss');
 const autoprefixer = require('autoprefixer');
 
 const scssURL = "src/_includes/scss/style.scss"
-const NOT_FOUND_PATH = "public/404/index.html"
 
 module.exports = eleventyConfig => {
+
     eleventyConfig.addWatchTarget("./src/_includes/scss")
     eleventyConfig.addWatchTarget("./src/_includes/js")
 
@@ -42,23 +42,22 @@ module.exports = eleventyConfig => {
         });
     });
 
-    // set browserSync to redirect 404 errors to 404 page
-    eleventyConfig.setBrowserSyncConfig({
-        callbacks: {
-            ready: function(err, bs) {
-                bs.addMiddleware("*", (req,res) => {
-                    if(!fs.existsSync(NOT_FOUND_PATH)) {
-                        throw new Error(`Expected a \`${NOT_FOUND_PATH}\` file but could not find one. Did you create a 404 template?`)
-                    }
-
-                    const content_404 = fs.readFileSync(NOT_FOUND_PATH)
-                    res.writeHead(404, {"Content-Type": "text/html; charset=UTF-8"})
-                    res.write(content_404)
-                    res.end()
-                })
-            }
-        }
+    // from https://www.11ty.dev/docs/dev-server/
+    eleventyConfig.setServerOptions({
+        domDiff: true,
+        encoding: "utf-8",
+        liveReload: true,
+        port: 8080,
+        showAllHosts: false,
+        watch: ["public/**/*.css","public/**/*.js"],
+    
+        // Use a local key/certificate to opt-in to local HTTP/2 with https
+        https: {
+          // key: "./localhost.key",
+          // cert: "./localhost.cert",
+        },
     })
+
     eleventyConfig.addCollection("tagsList", function(collectionApi) {
         const tagsList = new Set();
         collectionApi.getAll().map( item => {

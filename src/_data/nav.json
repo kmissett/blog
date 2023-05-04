@@ -30,6 +30,12 @@
         "primary": true
     },
     {
+        "name": "Search",
+        "url": "/search",
+        "icon": "search",
+        "primary": true
+    },
+    {
         "name": "Privacy",
         "url": "/privacy",
         "icon": "privacy",

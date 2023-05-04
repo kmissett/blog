@@ -1,0 +1,17 @@
+---
+layout: "layouts/base.njk"
+pageTitle: "Search"
+mainTitle: "Search"
+pageID: "search"
+---
+
+<form id="search-form">
+    <input type="search" name="search" id="search" autofocus />
+    <button type="submit" class="button icon" aria-label="search"><span aria-hidden="true">{% include "icons/search-line.svg" %}</span></button>
+</form>
+
+<section class="search-results" id="search-results" aria-label="search results">
+    Results go here
+    <div class="noscript">You must enable Javascript in order to use the site search function.</div>
+</section>
+

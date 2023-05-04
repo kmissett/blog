@@ -10,6 +10,9 @@ module.exports = eleventyConfig => {
     eleventyConfig.addWatchTarget("./src/_includes/scss")
     eleventyConfig.addWatchTarget("./src/_includes/js")
 
+    // Add filters
+    eleventyConfig.addFilter("squash", require("./src/_filters/squash.js"))
+
     // Minify HTML/JS
     // adapted from https://github.com/pdehaan/11ty-transform-async/
     eleventyConfig.addTransform('minify', require('./transforms/minify'))

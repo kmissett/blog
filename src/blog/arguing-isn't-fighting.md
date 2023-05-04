@@ -4,7 +4,7 @@ date: 2021-06-25
 tags: ["posts", "reasoning"]
 excerpt: "Hello, and welcome to the first in what I hope will be a long series of posts about the structures and processes of critical thinking. Along the way, I’ll talk about the basics of argument structures, formal logic, statistics, probability, and many common logical fallacies, plus other stuff I haven’t thought of yet."
 ---
-Welcome! This is the first post in a series of posts about the structures and processes of critical thinking. As of this writing, I have about 40 posts in mind; we’ll see how it goes. 
+Welcome! This is the first post in a series of posts about the structures and processes of critical thinking. As of this writing, I have about 40 posts in mind; we’ll see how it goes.
 
 To understand the basics of critical thinking, we need a set of basic tools and definitions. People sometimes use the same words to mean different things, which can lead to confusion. Thus, I’ll strive to define any term I use, and I’ll maintain a glossary for easy reference.
 

@@ -46,7 +46,9 @@ async function getPosts() {
 
 
 function filterPosts(posts, query) {
-    
+    //const queryArray = query.split(" ")
+    //let filteredPosts
+
     const filteredPosts = posts.filter((post) => post.title.toLowerCase().includes(query) || post.tags.includes(query) || post.excerpt.includes(query) || post.text.includes(query))
     return filteredPosts
 }

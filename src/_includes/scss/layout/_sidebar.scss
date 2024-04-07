@@ -48,8 +48,8 @@
     pointer-events: none;
     transition: opacity var(--time);
 
-    // replace with body:has(.site-sidebar[aria-expanded="true"]) &
-    .sidebar-open & {
+    /* .sidebar-open & { */
+    body:has(.site-sidebar[aria-expanded="true"]) & {
         opacity: .9;
         pointer-events: auto;
         cursor: pointer;

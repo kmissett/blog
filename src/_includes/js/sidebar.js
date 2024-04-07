@@ -9,7 +9,7 @@ const firstSidebarLink = sidebarLinks[0]
 const lastSidebarLink = sidebarLinks[sidebarLinks.length - 1]
 
 const openSidebar = () => {
-    document.body.classList.add("sidebar-open")
+    /* document.body.classList.add("sidebar-open") */
     siteSidebar.ariaExpanded = true
     openSidebarButton.ariaExpanded = true
     setTimeout(() => closeSidebarButton.focus(), time)
@@ -23,7 +23,7 @@ const openSidebar = () => {
 }
 
 const closeSidebar = () => {
-    document.body.classList.remove("sidebar-open")
+    /* document.body.classList.remove("sidebar-open") */
     siteSidebar.ariaExpanded = false
     openSidebarButton.ariaExpanded = false
     setTimeout(() => openSidebarButton.focus(), time)
